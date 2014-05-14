@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="Weather" table="weather">
+    <composite-id class="Weather" mapped="true">
+      <key-property name="STN"/>
+      <key-property name="DATE"/>
+    </composite-id>
+    <property name="MNET">
+      <column name="MNET"/>
+    </property>
+    <property name="SLAT">
+      <column name="SLAT"/>
+    </property>
+    <property name="SLON">
+      <column name="SLON"/>
+    </property>
+    <property name="SELV">
+      <column name="SELV"/>
+    </property>
+    <property name="TMPF">
+      <column name="TMPF"/>
+    </property>
+    <property name="SKNT">
+      <column name="SKNT"/>
+    </property>
+    <property name="DRCT">
+      <column name="DRCT"/>
+    </property>
+    <property name="GUST">
+      <column name="GUST"/>
+    </property>
+    <property name="PMSL">
+      <column name="PMSL"/>
+    </property>
+    <property name="ALTI">
+      <column name="ALTI"/>
+    </property>
+    <property name="DWPF">
+      <column name="DWPF"/>
+    </property>
+    <property name="RELH">
+      <column name="RELH"/>
+    </property>
+    <property name="WTHR">
+      <column name="WTHR"/>
+    </property>
+    <property name="P24I">
+      <column name="P24I"/>
+    </property>
+  </class>
+</hibernate-mapping>
